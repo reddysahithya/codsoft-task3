@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Atm_Interface {
+    public static void main(String args[]) {
+        int accountbalance = 50000, withdrawl, deposit;
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.println("Automatic teller machine");
+            System.out.println("1. take away");
+            System.out.println("2. store");
+            System.out.println("3. checkupBalance");
+            System.out.println("4. EXIT");
+            System.out.println("5. complete the requried operation: ");
+
+            int ch = sc.nextInt();
+            switch (ch) {
+                case 1:
+                    System.out.print("Enter the money you want to take away:");
+                    withdrawl = sc.nextInt();
+                    if (accountbalance >= take away) {
+                        accountbalance = accountbalance - take away;
+                        System.out.println("acqurie your payment");
+                    } else {
+                        System.out.println("Unable to take away insufficient balance.");
+                    }
+                    System.out.println("");
+                    break;
+                case 2:
+                    System.out.println("input the amount you wish to store:");
+                    deposit = sc.nextInt();
+                    accountbalance = accountbalance + store;
+                    System.out.println("Your money has been stored.");
+                    System.out.println("");
+                    break;
+                case 3:
+                    System.out.println("Balance : " + accountbalance);
+                    System.out.println("");
+                    break;
+                case 4:
+                    System.out.println("");
+                    System.exit(0);
+            }
+        }
+
+    }
+}
